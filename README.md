@@ -4,8 +4,8 @@ This is a simple model for estimating the global fleet size for aircraft.
 
 ## Developer guide 
 
-### Installing Dependeniies in virtual enronments
-This project uses uv to manage dpendencies and virtual environments. This can be found [ here.](https://docs.astral.sh/uv/).
+### Installing Dependencies in virtual enronments
+This project uses uv to manage dpendencies and virtual environments. This can be found [here](https://docs.astral.sh/uv/).
 Run the following command on the terminal create the necesary environment:
 
 ```
@@ -13,8 +13,8 @@ uv sync
 ```
 
 ### Model and Analysis 
-This repository contains a single analysis script. It is located in the aviation.py file. It outputs the required global fleet size. 
-It can be run from the terminal using the following command:
+This repository contains a single analysis script. The script is located in the [aviation.py](aviation.py) file and outputs the required global fleet size. 
+Run from the terminal using the following command:
 
 ```
 uv run python aviation.py
@@ -26,7 +26,7 @@ The documentation explaining the model and implementation is written using the m
 ```
 uv run mkdocs serve
 ```
- and will be hosted locally. 
+and will be hosted locally. 
 
 The documentaion is separated into two sections:
 - 'index.md' is the home page

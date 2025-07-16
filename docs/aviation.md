@@ -12,7 +12,7 @@ The following are constants and approximations made in the model.
 
 | Input     | Value | Unit | Source |
 | ----------- | ----------- |------|-----|
-| passengers per year | $6 \times10^9$      | year^-1^ | NAME[^1] | 
+| passengers per year | $5 \times10^9$      | year^-1^ | ATAG[@atagFactsFigures] | 
 | seats per aircraft |180 |- |
 | flight per aircraft per day  | 2 | day^-1^ | - |
 
@@ -40,6 +40,3 @@ $$
 
 ## Footnotes 
 
-note that this is number of seats and therefore the true value of passengers flying could be lower. 
-
-[^1]: \text{https://airlinergs.com/cirium-analysis-confirms-2024-as-a-record-breaking-year-in-global-aviation-history/#:~:text=During%202024%2C%20airlines%20offered%20an%20extraordinary%205.85%20billion,5.72%20billion%20seats%20set%20in%202019%20by%202%25.}

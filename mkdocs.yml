@@ -7,11 +7,16 @@ nav:
   - Aviation Model: 'aviation.md'
 
 markdown_extensions:
+  - footnotes
   - pymdownx.caret
   - pymdownx.tilde
   - pymdownx.arithmatex:
       generic: true
   
+plugins:
+  - search
+  - bibtex:
+      bib_file: "refs.bib"
 
 extra_javascript:
   - javascripts/mathjax.js

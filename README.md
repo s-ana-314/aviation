@@ -5,19 +5,19 @@ This is a simple model for estimating the global fleet size for aircraft.
 ## Developer guide 
 
 ### Installing Dependeniies in virtual enronments
-This project uses virutal envionments using the venv software package. 
+This project uses uv to manage dpendencies and virtual environments. This can be found [ here.](https://docs.astral.sh/uv/).
+Run the following command on the terminal create the necesary environment:
 
-...
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-...
+'''
+uv sync
+'''
 
 ### Accessing The Documentation
-The documentation explaining the model and implementation is written using the mkdocs package. This can be accessed using the terminal and typing:
-...
- mkdocs serve
-...
+The documentation explaining the model and implementation is written using the mkdocs package. This can be accessed using the terminal through uv and typing:
+
+'''
+uv run mkdocs serve
+'''
  and will be hosted locally. 
 
 The documentaion is separated into two sections:

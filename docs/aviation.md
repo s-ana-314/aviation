@@ -19,15 +19,24 @@ The following are constants and approximations made in the model.
 
 ## Equations
 
-Take the estimate of passengers per year to calculate the average number of passengers per day.
+Take the estimate of passengers per year to calculate the average number of passengers per day. Seen in equation $\ref{flights_per_aircraft_per_day}$.
+
 
 $$
- \text{flights per aircraft per day} = \frac{ \text{passengers per year} }{\text{days per year} }
+\begin{equation}
+\text{flights per aircraft per day} = \frac{ \text{passengers per year} }{\text{days per year} }
+\label{flights_per_aircraft_per_day}
+\end{equation}
  $$ 
 
 In order to estimate the required fleet size, we divide the number of passengers per day with the daily capacity of the one aircraft. 
 
-$$ \text{required global fleet}  = \frac{ \text{passengers per day} }{ \text{seats per aircraft} \times \text{flights per aircraft per day} }$$
+$$
+\begin{equation}
+ \text{required global fleet}  = \frac{ \text{passengers per day} }{ \text{seats per aircraft}\times \text{flights per aircraft per day} }
+\label{required_global_fleet}
+\end{equation}
+ $$ 
 
 ## Footnotes 
 

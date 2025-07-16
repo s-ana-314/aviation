@@ -7,8 +7,11 @@ nav:
   - Aviation Model: 'aviation.md'
 
 markdown_extensions:
+  - pymdownx.caret
+  - pymdownx.tilde
   - pymdownx.arithmatex:
       generic: true
+  
 
 extra_javascript:
   - javascripts/mathjax.js

@@ -13,7 +13,7 @@ The following are constants and approximations made in the model.
 | Input     | Value | Unit | Source |
 | ----------- | ----------- |------|-----|
 | passengers per year | $6 \times10^9$      | $year^{-1}$ | [^1] | 
-| seats per aircraft | |- |
+| seats per aircraft |180 |- |
 | flight per aircraft per day  | 2 | $day^{-1}$ | - |
 
 

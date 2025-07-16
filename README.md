@@ -11,6 +11,13 @@ Run the following command on the terminal create the necesary environment:
 '''
 uv sync
 '''
+### Model and Analysis 
+This repository contains a single analysis script. It is located in the aviation.py file. It outputs the required global fleet size. 
+It can be run from the terminal using the following command:
+
+'''
+uv run python aviation.py
+'''
 
 ### Accessing The Documentation
 The documentation explaining the model and implementation is written using the mkdocs package. This can be accessed using the terminal through uv and typing:

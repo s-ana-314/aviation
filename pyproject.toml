@@ -22,6 +22,9 @@ default-groups = ["dev", "docs"]
 requires = ["uv_build>=0.7.21,<0.8.0"]
 build-backend = "uv_build"
 
+[tool.ruff]
+line-length =100
+
 [tool.ruff.lint]
 select = [
     # pycodestyle

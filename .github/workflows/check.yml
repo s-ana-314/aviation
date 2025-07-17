@@ -20,3 +20,9 @@ jobs:
           python-version-file: ".python-version"
       - name: install depencencies
         run: uv sync
+      - name: lint with ruff
+        run: uv run ruff check
+      - name: format with ruff
+        run: uv run ruff format
+      - name: check with precommit
+        run: uv run pre-commit run --all-files

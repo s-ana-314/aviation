@@ -1,10 +1,10 @@
 site_name: My Aviation Project
 theme:
-    name: material
+  name: material
 
 nav:
-  - Home: 'index.md'
-  - Aviation Model: 'aviation.md'
+  - Home: "index.md"
+  - Aviation Model: "aviation.md"
 
 markdown_extensions:
   - footnotes
@@ -12,7 +12,7 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.arithmatex:
       generic: true
-  
+
 plugins:
   - search
   - bibtex:

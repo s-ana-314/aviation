@@ -21,3 +21,25 @@ default-groups = ["dev", "docs"]
 [build-system]
 requires = ["uv_build>=0.7.21,<0.8.0"]
 build-backend = "uv_build"
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+    #pepnaming
+    "N",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Ignore `T201` (import violations) in analysis directory.
+"analysis/*" = ["T201"]

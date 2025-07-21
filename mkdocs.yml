@@ -3,18 +3,24 @@ theme:
   name: material
   palette:
     # Palette toggle for light mode
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: light blue
       toggle:
-        icon: material/brightness-7
+        icon: material/toggle-switch
         name: Switch to dark mode
 
     # Palette toggle for dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: indigo
       toggle:
-        icon: material/brightness-4
+        icon: material/toggle-switch-off-outline
         name: Switch to light mode
+  features:
+    - navigation.tracking
+    - navigation.expand
+    - toc.integrate
 
 nav:
   - Home: "index.md"

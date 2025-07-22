@@ -7,6 +7,7 @@ def passengers_per_day(passengers_per_year, days_per_year):
     Args:
         passengers_per_year (float): Number of passengers flying in aircraft globally per year.
         days_per_year (float): Number of days in that specific year.
+
     """
     return passengers_per_year / days_per_year
 

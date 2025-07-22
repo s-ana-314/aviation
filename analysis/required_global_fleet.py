@@ -1,3 +1,5 @@
+"""Analysis to determine the required global fleet."""
+
 import aviation
 
 days_per_year = 366.0  # leap year

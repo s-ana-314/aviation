@@ -25,9 +25,6 @@ theme:
 nav:
   - Home: "index.md"
   - Aviation Model: "aviation.md"
-  - API Documentation:
-      - Aviation Project: api/index.md
-      - Aviation Module: api/aviation.md
 
 markdown_extensions:
   - attr_list
@@ -40,6 +37,8 @@ markdown_extensions:
 plugins:
   - search
   - mkdocstrings
+  - mkdocs-prebuild:
+      base_path: ["."]
   - bibtex:
       bib_file: "https://api.zotero.org/groups/5782724/collections/G847TDER/items?format=bibtex"
 

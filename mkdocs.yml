@@ -36,6 +36,9 @@ markdown_extensions:
 
 plugins:
   - search
+  - mkdocstrings
+  - mkdocs-prebuild:
+      base_path: ["."]
   - bibtex:
       bib_file: "https://api.zotero.org/groups/5782724/collections/G847TDER/items?format=bibtex"
 

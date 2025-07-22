@@ -1,3 +1,5 @@
+"""Analysis to determine the number of passengers per day."""
+
 import aviation
 
 days_per_year = 366.0  # leap year

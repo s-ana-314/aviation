@@ -26,6 +26,13 @@ repos:
       - id: uv-lock
   - repo: local
     hooks:
+      - id: mypy-check
+        name: mypy-check
+        entry: uv run mypy .
+        language: system
+        types: [python]
+        pass_filenames: false
+        always_run: true
       - id: pytest-check
         name: pytest-check
         entry: uv run pytest

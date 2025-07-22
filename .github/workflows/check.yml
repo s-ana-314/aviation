@@ -26,5 +26,7 @@ jobs:
         run: uv run ruff check
       - name: format with ruff
         run: uv run ruff format
+      - name: run pytest
+        run: uv run pytest
       - name: check with precommit
         run: uv run pre-commit run --all-files

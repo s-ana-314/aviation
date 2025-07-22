@@ -11,6 +11,7 @@ repos:
       - id: check-toml
       - id: check-yaml
       - id: name-tests-test
+        args: [--pytest-test-first]
       - id: mixed-line-ending
         args: ["--fix=lf"]
   - repo: https://github.com/astral-sh/ruff-pre-commit
@@ -23,3 +24,12 @@ repos:
     rev: 0.8.0
     hooks:
       - id: uv-lock
+  - repo: local
+    hooks:
+      - id: pytest-check
+        name: pytest-check
+        entry: uv run pytest
+        language: system
+        types: [python]
+        pass_filenames: false
+        always_run: true

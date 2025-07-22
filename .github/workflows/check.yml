@@ -22,6 +22,9 @@ jobs:
           python-version-file: ".python-version"
       - name: install depencencies
         run: uv sync
+        env:
+          UV_INDEX_GITLAB_USERNAME: ${{ vars.UV_INDEX_GITLAB_USERNAME }}
+          UV_INDEX_GITLAB_PASSWORD: ${{ secrets.UV_INDEX_GITLAB_PASSWORD }}
       - name: lint with ruff
         run: uv run ruff check
       - name: format with ruff

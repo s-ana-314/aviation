@@ -1,5 +1,7 @@
 """Analysis to determine the required global fleet."""
 
+import camia_engine as engine
+
 import aviation
 
 days_per_year = 366.0  # leap year
@@ -15,8 +17,8 @@ inputs = {
 }
 output = "required_global_fleet"
 
-# systems_model = engine.SystemsModel(aviation.tranforms)
-# required_global_fleet = systems_model.evaluate(inputs, output)
+systems_model = engine.SystemsModel(aviation.transforms)
+required_global_fleet = systems_model.evaluate(inputs, output)
 
 passengers_per_day = aviation.passengers_per_day(passengers_per_year, days_per_year)
 required_global_fleet = aviation.required_global_fleet(

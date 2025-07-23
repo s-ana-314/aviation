@@ -1,13 +1,20 @@
 """Analysis to determine the number of passengers per day."""
 
+import camia_engine as engine
+
 import aviation
 
-days_per_year = 366.0  # leap year
+days_per_year = 365.25
+passengers_per_year = 2000000.0
 
-passengers_per_year = 5_000_000_000.0  # note use float
-seats_per_aircraft = 180.0  # estimated from observation as 30 rows x 6 seats per row
-flight_per_aircraft_per_day = 2.0
+inputs = {
+    "days_per_year": days_per_year,
+    "passengers_per_year": passengers_per_year,
+}
+output = "passengers_per_day"
 
-passengers_per_day = aviation.passengers_per_day(passengers_per_year, days_per_year)
+systems_model = engine.SystemsModel(aviation.transforms)
+passengers_per_day = systems_model.evaluate(inputs, output)
+
 
 print(f"{passengers_per_day=:.2f}")  # f string good for formating

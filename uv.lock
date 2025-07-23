@@ -7,6 +7,7 @@ name = "aviation"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "camia-engine" },
     { name = "camia-model" },
 ]
 
@@ -25,7 +26,10 @@ docs = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "camia-model", specifier = ">=0.6.4" }]
+requires-dist = [
+    { name = "camia-engine", specifier = ">=0.4.4" },
+    { name = "camia-model", specifier = ">=0.6.4" },
+]
 
 [package.metadata.requires-dev]
 dev = [
@@ -62,6 +66,20 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/10/bf/fa31834dc27a7f05e5290eae47c82690edc3a7b37d58f7fb35a1bdbf355b/backrefs-5.9-py313-none-any.whl", hash = "sha256:cc37b19fa219e93ff825ed1fed8879e47b4d89aa7a1884860e2db64ccd7c676b", size = 399843, upload-time = "2025-06-22T19:34:09.68Z" },
     { url = "https://files.pythonhosted.org/packages/fc/24/b29af34b2c9c41645a9f4ff117bae860291780d73880f449e0b5d948c070/backrefs-5.9-py314-none-any.whl", hash = "sha256:df5e169836cc8acb5e440ebae9aad4bf9d15e226d3bad049cf3f6a5c20cc8dc9", size = 411762, upload-time = "2025-06-22T19:34:11.037Z" },
     { url = "https://files.pythonhosted.org/packages/41/ff/392bff89415399a979be4a65357a41d92729ae8580a66073d8ec8d810f98/backrefs-5.9-py39-none-any.whl", hash = "sha256:f48ee18f6252b8f5777a22a00a09a85de0ca931658f1dd96d4406a34f3748c60", size = 380265, upload-time = "2025-06-22T19:34:12.405Z" },
+]
+
+[[package]]
+name = "camia-engine"
+version = "0.4.4"
+source = { registry = "https://gitlab.developers.cam.ac.uk/api/v4/projects/8115/packages/pypi/simple" }
+dependencies = [
+    { name = "camia-model" },
+    { name = "numpy" },
+    { name = "xarray" },
+]
+sdist = { url = "https://gitlab.developers.cam.ac.uk/api/v4/projects/8115/packages/pypi/files/f19d6fda44789baae71375be36002cfdcb3e0ebdf80643839160bdc69fbe6337/camia_engine-0.4.4.tar.gz", hash = "sha256:f19d6fda44789baae71375be36002cfdcb3e0ebdf80643839160bdc69fbe6337" }
+wheels = [
+    { url = "https://gitlab.developers.cam.ac.uk/api/v4/projects/8115/packages/pypi/files/196f78b529c9d4e47da6af36924584d51786e306dce9bd1198c21ebee560007f/camia_engine-0.4.4-py3-none-any.whl", hash = "sha256:196f78b529c9d4e47da6af36924584d51786e306dce9bd1198c21ebee560007f" },
 ]
 
 [[package]]

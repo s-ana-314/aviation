@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Global model for Aviation"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "camia-model>=0.6.4",
+]
 
 [dependency-groups]
 dev = [

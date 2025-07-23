@@ -1,7 +1,7 @@
+import camia_engine as engine
 import pytest
 
 import aviation
-from aviation import _engine as engine
 
 
 @pytest.fixture

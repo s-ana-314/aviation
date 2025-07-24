@@ -24,7 +24,6 @@ def systems_model() -> engine.SystemsModel:
         (
             {
                 "passengers_per_year": 5_000_000_000.0 * passenger / year,
-                "days_per_year": 365.25 * day / year,
             },
             "passengers_per_day",
             13689253.94 * passenger / day,
@@ -36,17 +35,16 @@ def systems_model() -> engine.SystemsModel:
                 "flight_per_aircraft_per_day": 2.0 * journey / (aircraft * day),
             },
             "required_global_fleet",
-            37947.78 * aircraft,
+            37947.0 * aircraft,
         ),
         (
             {
-                "days_per_year": 366.0 * day / year,
                 "passengers_per_year": 5_000_000_000.0 * passenger / year,
                 "seats_per_aircraft": 180.0 * passenger / aircraft,
                 "flight_per_aircraft_per_day": 2.0 * journey / (aircraft * day),
             },
             "required_global_fleet",
-            37947.78 * aircraft,
+            38025.0 * aircraft,
         ),
     ),
 )

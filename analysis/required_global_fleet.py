@@ -1,4 +1,4 @@
-"""Analysis to determine the required global fleet."""
+"""Analysis to determine the required global fleet estimated using aviation module."""
 
 import camia_engine as engine
 from camia_model.units import day, year
